@@ -9,4 +9,4 @@ RUN curl -L -o jbrowse.tar.gz https://github.com/GMOD/jbrowse/archive/1.11.6-rel
     mv jbrowse-$JBROWSE_VERSION-release jbrowse && \
     rm jbrowse.tar.gz
 EXPOSE 9595
-ONBUILD COPY jbrowse.conf $JBROWSE_FOLDER
+ONBUILD COPY jbrowse.conf $JBROWSE_FOLDER/
