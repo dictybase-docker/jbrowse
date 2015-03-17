@@ -11,5 +11,3 @@ RUN curl -L -o jbrowse.zip http://jbrowse.org/wordpress/wp-content/plugins/downl
     && mv JBrowse-$JBROWSE_VERSION jbrowse \
     && rm jbrowse.zip
 EXPOSE 9595
-ONBUILD COPY jbrowse.conf $JBROWSE_FOLDER/
-ONBUILD COPY config $JBROWSE_FOLDER/config/
